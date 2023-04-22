@@ -2,89 +2,89 @@
 <html lang="ko">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Sanghyuk Choi" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sanghyuk Choi" />
 
-  <meta name="title" content="Utility Playground" />
-  <meta name="subject" content="project" />
-  <meta name="description" content="Enjoy my playground" />
-  <meta name="keywords" content="utility,playground,사다리,사다리타기,랜덤,뽑기" />
+    <meta name="title" content="Utility Playground" />
+    <meta name="subject" content="project" />
+    <meta name="description" content="Enjoy my playground" />
+    <meta name="keywords" content="utility,playground,사다리,사다리타기,랜덤,뽑기,이자,단리이자,복리이자,단리,복리,이자계산기,로또,번호,추첨,복권" />
 
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://my-apricity-cat.site/" />
-  <meta property="og:title" content="Utility Playground" />
-  <meta property="og:image" content="https://cdn.pixabay.com/photo/2018/09/26/09/18/pixel-cells-3704066_1280.png" />
-  <meta property="og:description" content="Enjoy my playground" />
-  <meta property="og:locale" content="ko_KR" />
-  <meta property="og:locale:alternate" content="en_US" />
-  <meta property="og:locale:alternate" content="ja_JP" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://my-apricity-cat.site/" />
+    <meta property="og:title" content="Utility Playground" />
+    <meta property="og:image" content="https://cdn.pixabay.com/photo/2018/09/26/09/18/pixel-cells-3704066_1280.png" />
+    <meta property="og:description" content="Enjoy my playground" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="ja_JP" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4F65K09T2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-C4F65K09T2');
-  </script>
-  <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4F65K09T2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-C4F65K09T2');
+    </script>
+    <!-- Google tag (gtag.js) -->
 
-  <title>Utility Playground</title>
+    <title>Utility Playground</title>
 
-  <style>
-    body {
-      box-sizing: border-box;
-      width: 100vw;
-      height: 100vh;
-      margin: 0;
-      padding: 0;
-      font-family: 'Roboto', sans-serif;
-    }
+    <style>
+        body {
+            box-sizing: border-box;
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
 
-    header {
-      background-color: #d4edd6;
-      padding: 20px;
-      text-align: center;
-      font-size: 35px;
-      color: rgb(37, 37, 37);
-    }
+        header {
+            background-color: #d4edd6;
+            padding: 20px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(37, 37, 37);
+        }
 
-    button {
-      width: 200px;
-      height: 50px;
-      background-color: #4CAF50;
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      transition-duration: 0.4s;
-    }
+        button {
+            width: 200px;
+            height: 50px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+        }
 
-    button:hover {
-      background-color: #45a049;
-    }
-  </style>
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 
 <body>
-  <header>Utility Playground</header>
-  <div style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;">
-    <button onclick="location.href='/ghost-leg/index.html'">사다리 타기</button>
-    <button onclick="location.href='/interest-calculator/index.html'">이자계산기</button>
-  </div>
+    <header>Utility Playground</header>
+    <div style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+        <button onclick="location.href='/ghost-leg/index.html'">사다리 타기</button>
+        <button onclick="location.href='/interest-calculator/index.html'">이자계산기</button>
+    </div>
 </body>
 
 </html>

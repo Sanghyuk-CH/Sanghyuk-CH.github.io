@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sanghyuk Choi" />
 
-    <meta name="title" content="Utility Playground - 사다리타기" />
+    <meta name="title" content="Utility Playground - 번호 추첨기" />
     <meta name="subject" content="project" />
     <meta name="description" content="Enjoy my playground" />
-    <meta name="keywords" content="사다리,사다리타기,랜덤,뽑기" />
+    <meta name="keywords" content="로또,번호,추첨,복권" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://my-apricity-cat.site/ghost-leg/index.html" />
-    <meta property="og:title" content="Utility Playground - 사다리타기" />
+    <meta property="og:url" content="https://my-apricity-cat.site/draw-numbers/index.html" />
+    <meta property="og:title" content="Utility Playground - 번호 추첨기" />
     <meta property="og:image" content="https://cdn.pixabay.com/photo/2018/09/26/09/18/pixel-cells-3704066_1280.png" />
     <meta property="og:description" content="Enjoy my playground" />
     <meta property="og:locale" content="ko_KR" />
@@ -37,21 +37,19 @@
     </script>
     <!-- Google tag (gtag.js) -->
 
-    <title>사다리타기</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Lottery Number Generator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>사다리타기</h1>
-    <canvas id="ladderCanvas" width="800" height="400"></canvas>
-    <br>
-    <label for="numParticipants">참가자 수:</label>
-    <input type="number" id="numParticipants" name="numParticipants" min="2" max="20" value="8">
-    <button onclick="applyParticipants()">참가자 수 적용하기</button>
-    <div id="inputTable"></div>
-
-    <button onclick="startGame()">시작하기</button>
-    <script src="./script.js"></script>
+    <h1>Lottery Number Generator</h1>
+    <label for="range">Number Range:</label>
+    <input type="number" id="range" value="45" min="1">
+    <label for="count">Number Count:</label>
+    <input type="number" id="count" value="6" min="1">
+    <button onclick="generateNumbers()">Generate</button>
+    <div id="result"></div>
+    <script src="script.js"></script>
 </body>
 
 </html>
